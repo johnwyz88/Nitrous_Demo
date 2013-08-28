@@ -73,7 +73,7 @@ var minDriftSpeed : float;
 //-----------------------------
 
 
-function OnLoaded() {
+function Start() {
 //    btnX = Screen.width * 0.01;
 //    btnY = Screen.width * 0.01;
 //    btnW = Screen.width * 0.3;
@@ -204,7 +204,9 @@ function Update()
 		
 		speed=Player.rigidbody.velocity.magnitude * 3.6;
 		
-	    power=Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 250.0;
+		
+	    power=Input.GetAxis("Vertical") * 100.0;
+
 	    steer=Input.GetAxis("Horizontal") * maxSteer * Mathf.Clamp(speedTurn/speed, 0, 1);
 	    brake=Input.GetButton("Jump") ? brakePower: 0.0;   
 		
