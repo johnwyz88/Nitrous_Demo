@@ -141,5 +141,6 @@ function StartGame(){
 		camera.enabled = false;
 		pgtAdminControl.FindAvatar0();
 		pgt.rigidbody.constraints.value__ = 0;
+		
 	}
 }

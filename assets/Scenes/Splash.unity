@@ -19228,7 +19228,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970037031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.0297852, y: -1.75088882, z: -10.8530273}
+  m_LocalPosition: {x: 10.0297852, y: -1.60164642, z: -10.8530273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1446540002}
@@ -20972,7 +20972,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1169098686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .213546753, z: 0}
+  m_LocalPosition: {x: 0, y: -.275287628, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1446540002}
@@ -28185,12 +28185,12 @@ MonoBehaviour:
   onStart: 1
   moveToPath: 1
   orientToPath: 1
-  smoothRotation: 1
+  smoothRotation: 1.20000005
   sizeToAdd: 0
   StopAtPoint: []
   _messages: []
   timeValue: 1
-  speed: 30
+  speed: 45
   easetype: 21
   looptype: 1
   lockAxis: 0
@@ -31213,7 +31213,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934175471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0147094727, y: .230041504, z: .0252685547}
+  m_LocalPosition: {x: .0147094727, y: -.290164948, z: .0252685547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1446540002}
