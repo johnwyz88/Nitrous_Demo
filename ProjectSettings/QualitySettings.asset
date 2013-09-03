@@ -7,15 +7,15 @@ QualitySettings:
   m_CurrentQuality: 0
   m_QualitySettings:
   - serializedVersion: 2
-    name: Fastest
+    name: Quality
     pixelLightCount: 0
-    shadows: 0
-    shadowResolution: 0
+    shadows: 1
+    shadowResolution: 1
     shadowProjection: 1
     shadowCascades: 1
     shadowDistance: 15
     blendWeights: 1
-    textureQuality: 2
+    textureQuality: 0
     anisotropicTextures: 0
     antiAliasing: 0
     softParticles: 1
@@ -25,4 +25,8 @@ QualitySettings:
     maximumLODLevel: 0
     particleRaycastBudget: 4
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality: {}
+  m_PerPlatformDefaultQuality:
+    Android: 0
+    FlashPlayer: 0
+    Standalone: 0
+    Web: 0

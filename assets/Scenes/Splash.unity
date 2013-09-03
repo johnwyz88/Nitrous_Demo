@@ -13108,7 +13108,7 @@ MonoBehaviour:
   StopAtPoint: []
   _messages: []
   timeValue: 1
-  speed: 38
+  speed: 32
   easetype: 21
   looptype: 1
   lockAxis: 0
