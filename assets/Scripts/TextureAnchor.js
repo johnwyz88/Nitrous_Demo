@@ -26,6 +26,30 @@ function Start () {
 	} else if(guiTexture.texture.name == "comingSoon"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "go"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "num3"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "num2"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "num1"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "medal1"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "medal2"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "medal3"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "medal"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
 	} 
 }
 
