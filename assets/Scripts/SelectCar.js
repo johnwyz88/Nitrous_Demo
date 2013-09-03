@@ -9,6 +9,10 @@ var select : GUITexture;
 var pgt : GameObject;
 var gameCamera : Camera;
 var pgtAdminControl : PgtAdminControl;
+var charger : GameObject;
+var colt : GameObject;
+var nitrous : GameObject;
+var lambo : GameObject;
 
 function Start () {
 	carNum = 0;
@@ -134,6 +138,9 @@ function StartGame(){
 		camera.enabled = false;
 		pgtAdminControl.FindAvatar0();
 		pgt.rigidbody.constraints.value__ = 0;
-		
+		charger.GetComponent(iMove).enabled = true;
+		colt.GetComponent(iMove).enabled = true;
+		nitrous.GetComponent(iMove).enabled = true;
+		lambo.GetComponent(iMove).enabled = true;
 	}
 }

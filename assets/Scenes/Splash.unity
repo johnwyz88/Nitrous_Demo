@@ -9953,7 +9953,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219585214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d759744f742459748b1eec72e8051b90, type: 3}
   m_Name: 
@@ -10940,7 +10940,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 270308449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d759744f742459748b1eec72e8051b90, type: 3}
   m_Name: 
@@ -13094,7 +13094,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 390265683}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d759744f742459748b1eec72e8051b90, type: 3}
   m_Name: 
@@ -13108,7 +13108,7 @@ MonoBehaviour:
   StopAtPoint: []
   _messages: []
   timeValue: 1
-  speed: 32
+  speed: 30
   easetype: 21
   looptype: 1
   lockAxis: 0
@@ -13233,6 +13233,10 @@ MonoBehaviour:
   pgt: {fileID: 440070468}
   gameCamera: {fileID: 849414419}
   pgtAdminControl: {fileID: 785715257}
+  charger: {fileID: 1559846184}
+  colt: {fileID: 390265683}
+  nitrous: {fileID: 219585214}
+  lambo: {fileID: 270308449}
 --- !u!1 &394370311
 GameObject:
   m_ObjectHideFlags: 0
@@ -19907,6 +19911,11 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+  driveEnabled: 0
+  count: 0
+  tempX: 0
+  tempY: 0
+  tempZ: 0
   frLeft: {fileID: 0}
   frRight: {fileID: 0}
   reLeft: {fileID: 0}
@@ -19932,6 +19941,7 @@ MonoBehaviour:
   steerMultiplier: 0
   maxSpeed: 0
   minDriftSpeed: 0
+  colt: {fileID: 390265683}
 --- !u!1 &787158412
 GameObject:
   m_ObjectHideFlags: 0
@@ -36444,7 +36454,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1559846184}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d759744f742459748b1eec72e8051b90, type: 3}
   m_Name: 
