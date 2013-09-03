@@ -7,10 +7,6 @@ var leftChevron : GUITexture;
 var rightChevron : GUITexture;
 var select : GUITexture;
 var pgt : GameObject;
-var charger : GameObject;
-var colt : GameObject;
-var nitrous : GameObject;
-var lambo : GameObject;
 var gameCamera : Camera;
 var pgtAdminControl : PgtAdminControl;
 
@@ -134,9 +130,6 @@ function MoveCam(dir : String){
 function StartGame(){
 	if(carNum == 0){
 		Debug.Log("Start Game!");
-		nitrous.active = false;
-		colt.active = false;
-		lambo.active = false;
 		gameCamera.enabled = true;
 		camera.enabled = false;
 		pgtAdminControl.FindAvatar0();
