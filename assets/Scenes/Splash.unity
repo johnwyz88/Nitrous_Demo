@@ -11546,7 +11546,7 @@ GameObject:
   - 4: {fileID: 161199345}
   - 65: {fileID: 161199346}
   m_Layer: 0
-  m_Name: FinishLineDetection
+  m_Name: FinishLineOneWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11570,7 +11570,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 161199344}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11763,6 +11763,45 @@ Transform:
   m_Children:
   - {fileID: 1406829953}
   m_Father: {fileID: 612542425}
+--- !u!1 &185092021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 185092022}
+  - 65: {fileID: 185092023}
+  m_Layer: 0
+  m_Name: FinishLineDetection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &185092022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185092021}
+  m_LocalRotation: {x: 0, y: -.921853483, z: 0, w: -.387538761}
+  m_LocalPosition: {x: 21.7606812, y: 129.347549, z: -21.8306274}
+  m_LocalScale: {x: 70.1774902, y: 287.442352, z: -2.06809807}
+  m_Children: []
+  m_Father: {fileID: 324181022}
+--- !u!65 &185092023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185092021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &188690901
 GameObject:
   m_ObjectHideFlags: 0
@@ -14619,6 +14658,7 @@ Transform:
   m_LocalPosition: {x: 760.557617, y: 39.6598511, z: 582.450806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 185092022}
   - {fileID: 1223140460}
   - {fileID: 132544627}
   - {fileID: 161199345}
@@ -16055,6 +16095,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 440070469}
   - 54: {fileID: 440070471}
+  - 114: {fileID: 440070470}
+  - 114: {fileID: 440070472}
   m_Layer: 0
   m_Name: Pgt
   m_TagString: Untagged
@@ -16076,6 +16118,17 @@ Transform:
   - {fileID: 1408328908}
   - {fileID: 2067322734}
   m_Father: {fileID: 1198644018}
+--- !u!114 &440070470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440070468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e406f00a3f98f8447ab26150b6aa1f48, type: 3}
+  m_Name: 
+  finishLineOneWay: {fileID: 161199346}
 --- !u!54 &440070471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16092,6 +16145,78 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
+--- !u!114 &440070472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440070468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1771c0f351f76d42ab178b07098461d, type: 3}
+  m_Name: 
+  wins: 0
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  count: 0
+  finishLineOneWay: {fileID: 161199346}
 --- !u!1 &445231293
 GameObject:
   m_ObjectHideFlags: 0

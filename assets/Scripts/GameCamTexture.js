@@ -13,6 +13,7 @@ var pgtAdminControl : PgtAdminControl;
 public static var countDown : int;
 var startCount : boolean;
 
+
 function Start () {
 	countDown = 350;
 }
