@@ -237,8 +237,7 @@ function Update()
 		if(driveEnabled){
 			speed=Player.rigidbody.velocity.magnitude * 3.6;
 			
-			
-		    power=Input.GetAxis("Vertical") * 100.0;
+		    power=Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 250.0;
 	
 		    steer=Input.GetAxis("Horizontal") * maxSteer * Mathf.Clamp(speedTurn/speed, 0, 1);
 		    brake=Input.GetButton("Jump") ? brakePower: 0.0;   

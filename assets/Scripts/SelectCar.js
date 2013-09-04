@@ -6,9 +6,7 @@ var touchPosition : Vector2;
 var leftChevron : GUITexture;
 var rightChevron : GUITexture;
 var select : GUITexture;
-var pgt : GameObject;
-var gameCamera : Camera;
-var pgtAdminControl : PgtAdminControl;
+var gameCamTexture : GameCamTexture;
 
 function Start () {
 	carNum = 0;
@@ -32,27 +30,27 @@ function Update () {
 		
 		//Play Animation
 	
-		//Debug.Log(camera.cullingMask.ToString());
+//		Debug.Log(camera.cullingMask.ToString());
 		switch(carNum){
 			case 0:
 				MoveCamTransform(GameObject.Find("Pgt").transform);
-				camera.cullingMask = -17665;
+				camera.cullingMask = -8341249;
 			break;
 			case 1:
 				MoveCamTransform(GameObject.Find("Charger").transform);
-				camera.cullingMask = -25089;
+				camera.cullingMask = -8348161;
 			break;
 			case 2:
 				MoveCamTransform(GameObject.Find("Colt").transform);
-				camera.cullingMask = -8961;
+				camera.cullingMask = -8332033;
 			break;
 			case 3:
 				MoveCamTransform(GameObject.Find("Nitrous").transform);
-				camera.cullingMask = -8961;
+				camera.cullingMask = -8332033;
 			break;
 			case 4:
 				MoveCamTransform(GameObject.Find("Lambo").transform);
-				camera.cullingMask = -11009;
+				camera.cullingMask = -8334081;
 			break;
 		}
 		
@@ -103,7 +101,9 @@ function TouchEventHandler(xPos : int, yPos : int){
 	
 	//Select texture is touched/clicked
 	if((xPos > select.pixelInset.x && xPos < select.pixelInset.x + select.pixelInset.width) && (yPos > select.pixelInset.y && yPos < select.pixelInset.y + select.pixelInset.height)){
-		StartGame();
+		if(carNum == 0){
+			gameCamTexture.StartGame();
+		}		
 	}
 }
 
@@ -125,14 +125,4 @@ function MoveCam(dir : String){
 		Debug.Log("Move right");
 	}
 		
-}
-
-function StartGame(){
-	if(carNum == 0){
-		Debug.Log("Start Game!");
-		gameCamera.enabled = true;
-		camera.enabled = false;
-		pgtAdminControl.FindAvatar0();
-		pgt.rigidbody.constraints.value__ = 0;
-	}
 }

@@ -4920,7 +4920,7 @@ Transform:
   m_GameObject: {fileID: 35714795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children:
   - {fileID: 1306013732}
   - {fileID: 1683728597}
@@ -12629,8 +12629,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -15771,7 +15771,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4286626047
+    m_Bits: 4286633215
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -15804,9 +15804,7 @@ MonoBehaviour:
   leftChevron: {fileID: 1196402158}
   rightChevron: {fileID: 1556814580}
   select: {fileID: 1510570498}
-  pgt: {fileID: 440070468}
-  gameCamera: {fileID: 849414419}
-  pgtAdminControl: {fileID: 785715257}
+  gameCamTexture: {fileID: 849414425}
 --- !u!1 &394370311
 GameObject:
   m_ObjectHideFlags: 0
@@ -22544,8 +22542,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 256
+    height: 256
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -24995,7 +24993,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4287075071
+    m_Bits: 4286616319
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -25026,8 +25024,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 849414418}
-  m_LocalRotation: {x: .255672336, y: -.245657369, z: .138564736, w: .924707532}
-  m_LocalPosition: {x: 769.023071, y: 69.3864441, z: 560.023071}
+  m_LocalRotation: {x: .0921243876, y: -.322839528, z: .0872316882, w: .937911749}
+  m_LocalPosition: {x: 787.345825, y: 70.9688187, z: 548.583618}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -25065,6 +25063,10 @@ MonoBehaviour:
   colt: {fileID: 390265683}
   nitrous: {fileID: 219585214}
   lambo: {fileID: 270308449}
+  pgt: {fileID: 440070468}
+  selectCamera: {fileID: 393157847}
+  pgtAdminControl: {fileID: 785715257}
+  startCount: 0
 --- !u!1 &851074693
 GameObject:
   m_ObjectHideFlags: 0
@@ -28385,8 +28387,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -36738,8 +36740,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -37273,7 +37275,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294947071
+    m_Bits: 4286623999
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -41268,8 +41270,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -41837,8 +41839,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 256
+    height: 256
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -43680,8 +43682,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 256
+    height: 256
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -44353,8 +44355,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -45350,8 +45352,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 256
+    height: 256
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -46778,8 +46780,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
