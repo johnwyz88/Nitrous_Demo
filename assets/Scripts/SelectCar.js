@@ -38,7 +38,7 @@ function Update () {
 			break;
 			case 1:
 				MoveCamTransform(GameObject.Find("Charger").transform);
-				camera.cullingMask = -8348161;
+				camera.cullingMask = -8332033;
 			break;
 			case 2:
 				MoveCamTransform(GameObject.Find("Colt").transform);
