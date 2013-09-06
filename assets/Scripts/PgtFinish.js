@@ -2,7 +2,12 @@ var wins:int = 0;
 var style:GUIStyle;
 var count:int = 0;
 var finishLineOneWay : BoxCollider;
+public static var gameFinished : boolean;
+var pgtAdminControl : PgtAdminControl;
 
+function Start(){
+	gameFinished = false;
+}
 
 function OnTriggerExit (myTrigger : Collider) {
 	
@@ -15,6 +20,8 @@ function OnTriggerExit (myTrigger : Collider) {
 		wins++;
 		count = 0;
 		finishLineOneWay.isTrigger = false;
+		gameFinished = true;
+		pgtAdminControl.brake = 200;
 	}	
 }
 

@@ -32,7 +32,7 @@ var style:GUIStyle;
 //var adminPanel : AdminPanel;
 
 var driveEnabled : boolean;
-var count : int;
+var countDown : int;
 var tempX : float;
 var tempY : float;
 var tempZ : float;
@@ -77,7 +77,12 @@ var steerMultiplier : float;
 var maxSpeed : float;
 var minDriftSpeed : float;
 
+//John's variables
 var colt : GameObject;
+
+var pgtFinish : PgtFinish;
+
+var gameCam : Camera;
 //-----------------------------
 
 
@@ -109,7 +114,7 @@ function Start() {
     maxSpeed = 280;
     minDriftSpeed = 130;
     driveEnabled = true;
-    count = 1000;
+    countDown = 350;
 //  Network.SetReceivingEnabled(networkGroup,true);
 //	Network.SetSendingEnabled(networkGroup,true);
 }
@@ -212,34 +217,44 @@ function Update()
 //	    style.fontStyle = FontStyle.BoldAndItalic;
 //	    style.normal.textColor = Color.white;
 		
-		if(Input.GetKeyDown("r")){
+		if(Input.GetKeyDown("r") && !pgtFinish.gameFinished){	
 			Player.transform.position = colt.transform.position;
-		    Player.transform.position.y = colt.transform.position.y + 2;
-			tempX = colt.transform.rotation.x;
-			tempY = colt.transform.rotation.y;
-			tempZ = colt.transform.rotation.z;
+		    Player.transform.position.y = colt.transform.position.y + 2;	
+		    Player.transform.rotation.x = colt.transform.rotation.x;	
+			Player.transform.rotation.y = colt.transform.rotation.y;
+			Player.transform.rotation.z = colt.transform.rotation.z;	
+			Player.rigidbody.freezeRotation = true;
 		    driveEnabled = false;
-		    count = 1000;
-	    }
-		
-		if(driveEnabled == false){				
-			Player.transform.rotation.x = tempX;	
-			Player.transform.rotation.y = tempY;
-			Player.transform.rotation.z = tempZ;
-			
-		    Player.rigidbody.velocity = Vector3(0,0,0);		
-			count -= Time.deltaTime;
-			if(count <= 0){
-				driveEnabled = true;				
+		    countDown = 350;			
+	    }		
+	
+		if(driveEnabled == false){			
+			Player.rigidbody.velocity = Vector3(0,0,0);			
+					    	
+			countDown -= Time.deltaTime;
+			if(countDown <= 350 && countDown > 250){
+				gameCam.cullingMask = -16674049;
+			} else if(countDown <= 250 && countDown > 150){
+				gameCam.cullingMask = -16608513;
+			} else if(countDown <= 150 && countDown > 50){
+				gameCam.cullingMask = -16477441;
+			} else if(countDown <= 50 && countDown > 0){
+				gameCam.cullingMask = -16215297;			
+			} else {
+				gameCam.cullingMask = -16739585;
+				driveEnabled = true;
+				Player.rigidbody.freezeRotation = false;
 			}
 		}
 		
 		if(driveEnabled){
 			speed=Player.rigidbody.velocity.magnitude * 3.6;
 			
-		    power=Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 250.0;
-	
-		    steer=Input.GetAxis("Horizontal") * maxSteer * Mathf.Clamp(speedTurn/speed, 0, 1);
+			if(!pgtFinish.gameFinished){
+				power=Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 250.0;	
+		    	steer=Input.GetAxis("Horizontal") * maxSteer * Mathf.Clamp(speedTurn/speed, 0, 1);
+			}
+		    
 		    brake=Input.GetButton("Jump") ? brakePower: 0.0;   
 			
 			

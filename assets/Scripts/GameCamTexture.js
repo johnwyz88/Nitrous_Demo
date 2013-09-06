@@ -15,7 +15,6 @@ var startCount : boolean;
 public static var InGame : boolean;
 var pgtFinish : PgtFinish;
 
-
 function Start () {
 	countDown = 350;
 	InGame = false;
@@ -44,14 +43,32 @@ function Update () {
 			colt.GetComponent(iMove).enabled = true;
 			nitrous.GetComponent(iMove).enabled = true;
 			lambo.GetComponent(iMove).enabled = true;
+			
+			charger.GetComponent(iMove).speed = Random.Range(30,39);		
+			do{
+				colt.GetComponent(iMove).speed = Random.Range(30,39);
+			} while (colt.GetComponent(iMove).speed == charger.GetComponent(iMove).speed);
+			
+			nitrous.GetComponent(iMove).speed = Random.Range(40,50);
+			
+			do{
+				lambo.GetComponent(iMove).speed = Random.Range(40,50);
+			} while (lambo.GetComponent(iMove).speed == nitrous.GetComponent(iMove).speed);
+		
 			InGame = true;
 		}
 	}	
 	
-	if(pgtFinish.wins > 0){
-		camera.cullingMask = -7302401;
-//		camera.cullingMask = -6253825;
-//		camera.cullingMask = -4156673;		
+	if(pgtFinish.gameFinished){
+		if(pgtFinish.wins == 1){
+			camera.cullingMask = -7302401;	
+		} else if(pgtFinish.wins == 2){
+			camera.cullingMask = -6253825;	
+		} else if(pgtFinish.wins == 3){
+			camera.cullingMask = -4156673;		
+		} else if(pgtFinish.wins > 3){
+			camera.cullingMask = -16723201;		
+		}
 	}
 }
 
