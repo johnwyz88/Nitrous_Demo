@@ -341,10 +341,10 @@ ModelImporter:
     4300082: Mesh42
     4300084: Mesh43
     4300086: Mesh44
-    9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 3
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -373,7 +373,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
+    splitTangentsAcrossUV: 0
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
@@ -392,5 +392,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   additionalBone: 1
-  animationType: 2
+  animationType: 1
   userData: 

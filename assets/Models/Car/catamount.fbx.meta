@@ -1,11 +1,5 @@
 fileFormatVersion: 2
 guid: a6143b6c79b85ba458b132eb80b5728a
-labels:
-- Mesh
-- SWS
-- car
-- enemy
-- vehicle
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:

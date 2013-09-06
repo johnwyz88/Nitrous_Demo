@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-[ExecuteInEditMode]
+// TBD: if some shader is not supported, turn off!
+
 [AddComponentMenu("Image Effects/Contrast Stretch")]
 public class ContrastStretchEffect : MonoBehaviour
 {
@@ -87,11 +88,6 @@ public class ContrastStretchEffect : MonoBehaviour
 	{
 		// Disable if we don't support image effects
 		if (!SystemInfo.supportsImageEffects) {
-			enabled = false;
-			return;
-		}
-		
-		if (!shaderAdapt.isSupported || !shaderApply.isSupported || !shaderLum.isSupported || !shaderReduce.isSupported) {
 			enabled = false;
 			return;
 		}

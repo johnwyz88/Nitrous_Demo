@@ -3,7 +3,7 @@
 using UnityEngine;
 
 [ExecuteInEditMode]
-[AddComponentMenu("Image Effects/Edge Detection (Color)")]
+[AddComponentMenu("Image Effects/Edge Detection")]
 public class EdgeDetectEffect : ImageEffectBase
 {
 	public float threshold = 0.2F;
