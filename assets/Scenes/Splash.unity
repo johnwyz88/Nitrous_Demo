@@ -5162,11 +5162,10 @@ Transform:
   - {fileID: 1901195816}
   - {fileID: 1349041228}
   - {fileID: 1609660788}
-  - {fileID: 228426511}
-  - {fileID: 1722423838}
   - {fileID: 1786037422}
   - {fileID: 1640454477}
   - {fileID: 712712433}
+  - {fileID: 556682735}
   - {fileID: 1556814581}
   - {fileID: 1510570499}
   m_Father: {fileID: 0}
@@ -5585,6 +5584,30 @@ Prefab:
       propertyPath: m_Mass
       value: 4500
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400010, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400004, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400008, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400000, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400002, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55f44a8d711b0964e9c30672ec9a3e96, type: 2}
   m_RootGameObject: {fileID: 270308449}
@@ -13812,67 +13835,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2003158864}
---- !u!1 &228426510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 228426511}
-  - 131: {fileID: 228426512}
-  - 114: {fileID: 228426513}
-  m_Layer: 21
-  m_Name: MedalBackImage2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &228426511
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228426510}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
-  m_Children: []
-  m_Father: {fileID: 35714796}
---- !u!131 &228426512
-GUITexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228426510}
-  m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 5a2725a0fb95efd489f1dcaa2fda5fda, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
-  m_PixelInset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 512
-    height: 512
-  m_LeftBorder: 0
-  m_RightBorder: 0
-  m_TopBorder: 0
-  m_BottomBorder: 0
---- !u!114 &228426513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228426510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1d3b3c44a93c41498fb7c1be369e0d9, type: 3}
-  m_Name: 
-  yOffSet: 0
-  xOffSet: 0
-  xPercent: 0
-  yPercent: 0
 --- !u!1 &235090847
 GameObject:
   m_ObjectHideFlags: 0
@@ -13968,6 +13930,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 241005145}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!64 &241005148
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16044,6 +16007,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 284272465}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!23 &284272468
 Renderer:
   m_ObjectHideFlags: 0
@@ -17965,7 +17929,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4286633215
+    m_Bits: 4278227199
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -22063,6 +22027,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 526709327}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!23 &526709330
 Renderer:
   m_ObjectHideFlags: 0
@@ -22609,6 +22574,67 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 120182414}
+--- !u!1 &556682734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 556682735}
+  - 131: {fileID: 556682736}
+  - 114: {fileID: 556682737}
+  m_Layer: 0
+  m_Name: QuestionMark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &556682735
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556682734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 35714796}
+--- !u!131 &556682736
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556682734}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: c85c760dfe50e4b429cde78b029cda4d, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 64
+    height: 64
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!114 &556682737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556682734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3b3c44a93c41498fb7c1be369e0d9, type: 3}
+  m_Name: 
+  yOffSet: 0
+  xOffSet: 0
+  xPercent: 0
+  yPercent: 0
 --- !u!1 &557432335
 GameObject:
   m_ObjectHideFlags: 0
@@ -27459,7 +27485,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4286616319
+    m_Bits: 4278227711
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -27533,6 +27559,7 @@ MonoBehaviour:
   selectCamera: {fileID: 393157847}
   pgtAdminControl: {fileID: 785715257}
   startCount: 0
+  pgtFinish: {fileID: 440070472}
 --- !u!1 &851074693
 GameObject:
   m_ObjectHideFlags: 0
@@ -31805,14 +31832,14 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977839432}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: bc7b2b43be6c8b54686c86df67087ca4, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8172384fa5663d84cac5e0b1175248a6, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 512
-    height: 512
+    width: 230
+    height: 230
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -33061,6 +33088,30 @@ Prefab:
       propertyPath: m_Mass
       value: 4500
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400010, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400004, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400008, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400000, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400002, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 699139ef0d7bc8a44acc34eaa55759f7, type: 2}
   m_RootGameObject: {fileID: 1559846184}
@@ -34664,6 +34715,22 @@ Prefab:
       propertyPath: m_Mass
       value: 5000
       objectReference: {fileID: 0}
+    - target: {fileID: 11400022, guid: 0f0a851b6bd654544bef5aafeb4ccbe7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400020, guid: 0f0a851b6bd654544bef5aafeb4ccbe7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400018, guid: 0f0a851b6bd654544bef5aafeb4ccbe7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400002, guid: 0f0a851b6bd654544bef5aafeb4ccbe7, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0a851b6bd654544bef5aafeb4ccbe7, type: 2}
   m_RootGameObject: {fileID: 219585214}
@@ -40417,8 +40484,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 512
-    height: 512
+    width: 230
+    height: 230
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -41113,7 +41180,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4286623999
+    m_Bits: 4278235391
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -41123,8 +41190,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1392973375}
-  m_LocalRotation: {x: .0315818749, y: .9266783, z: -.0799874589, w: .365885317}
-  m_LocalPosition: {x: 243.967041, y: 255.440674, z: 1365.99292}
+  m_LocalRotation: {x: .0971650779, y: .894994318, z: -.0815795511, w: .42765516}
+  m_LocalPosition: {x: 278.454895, y: 300.459869, z: 1365.052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41260,6 +41327,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 1394478166}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!23 &1394478169
 Renderer:
   m_ObjectHideFlags: 0
@@ -41559,6 +41627,14 @@ Prefab:
       propertyPath: m_Mass
       value: 7500
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c702281394c43cc4495d383f1401b7ed, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400000, guid: c702281394c43cc4495d383f1401b7ed, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c702281394c43cc4495d383f1401b7ed, type: 2}
   m_RootGameObject: {fileID: 390265683}
@@ -42378,6 +42454,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 1426323729}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!64 &1426323732
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44142,6 +44219,14 @@ Prefab:
       propertyPath: m_Mass
       value: 5500
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: c53c6aa6d3608ee479626d4fe1220ea8, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
+    - target: {fileID: 11400002, guid: c53c6aa6d3608ee479626d4fe1220ea8, type: 2}
+      propertyPath: GameCamObj
+      value: 
+      objectReference: {fileID: 849414425}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c53c6aa6d3608ee479626d4fe1220ea8, type: 2}
   m_RootGameObject: {fileID: 440070468}
@@ -45538,8 +45623,8 @@ GameObject:
   - 4: {fileID: 1609660788}
   - 131: {fileID: 1609660789}
   - 114: {fileID: 1609660790}
-  m_Layer: 20
-  m_Name: MedalBackImage1
+  m_Layer: 23
+  m_Name: MedalBackImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45552,7 +45637,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609660787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 35714796}
@@ -51039,67 +51124,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 951497692}
   m_GameObject: {fileID: 1721271045}
   m_Mesh: {fileID: 4300018, guid: f16fac36c2bebf649ac8a6fa423112ba, type: 3}
---- !u!1 &1722423837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1722423838}
-  - 131: {fileID: 1722423839}
-  - 114: {fileID: 1722423840}
-  m_Layer: 22
-  m_Name: MedalBackImage3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1722423838
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722423837}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
-  m_Children: []
-  m_Father: {fileID: 35714796}
---- !u!131 &1722423839
-GUITexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722423837}
-  m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 5a2725a0fb95efd489f1dcaa2fda5fda, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
-  m_PixelInset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 512
-    height: 512
-  m_LeftBorder: 0
-  m_RightBorder: 0
-  m_TopBorder: 0
-  m_BottomBorder: 0
---- !u!114 &1722423840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722423837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1d3b3c44a93c41498fb7c1be369e0d9, type: 3}
-  m_Name: 
-  yOffSet: 0
-  xOffSet: 0
-  xPercent: 0
-  yPercent: 0
 --- !u!1 &1722712309
 GameObject:
   m_ObjectHideFlags: 0
@@ -53386,8 +53410,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 512
-    height: 512
+    width: 230
+    height: 230
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -54037,6 +54061,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 1935504894}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!64 &1935504897
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56350,6 +56375,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 1972190057}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!64 &1972190060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -59666,6 +59692,7 @@ MonoBehaviour:
   m_Name: 
   wheel: {fileID: 2086994113}
   speed: 0
+  GameCamObj: {fileID: 849414425}
 --- !u!23 &2086994116
 Renderer:
   m_ObjectHideFlags: 0

@@ -12,35 +12,47 @@ var selectCamera : Camera;
 var pgtAdminControl : PgtAdminControl;
 public static var countDown : int;
 var startCount : boolean;
+public static var InGame : boolean;
+var pgtFinish : PgtFinish;
 
 
 function Start () {
 	countDown = 350;
+	InGame = false;
 }
 
 function Update () {
+//	Debug.Log(camera.cullingMask.ToString());
+
 	if(startCount){
 		countDown -= Time.deltaTime;	
 		if(countDown <= 350 && countDown > 250){
-			camera.cullingMask = -8285441;
+			camera.cullingMask = -16674049;
 		} else if(countDown <= 250 && countDown > 150){
-			camera.cullingMask = -8219905;
+			camera.cullingMask = -16608513;
 		} else if(countDown <= 150 && countDown > 50){
-			camera.cullingMask = -8088833;
+			camera.cullingMask = -16477441;
 		} else if(countDown <= 50 && countDown > 0){
-			camera.cullingMask = -7826689;
+			camera.cullingMask = -16215297;
 			pgtAdminControl.FindAvatar0();
 			pgt.rigidbody.constraints.value__ = 0;
 		} else {
-			camera.cullingMask = -8350977;
+			camera.cullingMask = -16739585;
 			startCount = false;
 			countDown = 350;
 			charger.GetComponent(iMove).enabled = true;
 			colt.GetComponent(iMove).enabled = true;
 			nitrous.GetComponent(iMove).enabled = true;
 			lambo.GetComponent(iMove).enabled = true;
+			InGame = true;
 		}
 	}	
+	
+	if(pgtFinish.wins > 0){
+		camera.cullingMask = -7302401;
+//		camera.cullingMask = -6253825;
+//		camera.cullingMask = -4156673;		
+	}
 }
 
 function StartGame(){

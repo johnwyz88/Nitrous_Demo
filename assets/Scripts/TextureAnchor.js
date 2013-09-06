@@ -40,16 +40,19 @@ function Start () {
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
 	} else if(guiTexture.texture.name == "medal1"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
-		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent * 1.55;
 	} else if(guiTexture.texture.name == "medal2"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
-		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent * 1.55;
 	} else if(guiTexture.texture.name == "medal3"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
-		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent * 1.55;
 	} else if(guiTexture.texture.name == "medal"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "question-mark"){
+		guiTexture.pixelInset.x = Screen.width - guiTexture.pixelInset.width - xOffSet;
+		guiTexture.pixelInset.y = Screen.height - guiTexture.pixelInset.height - yOffSet;
 	} 
 }
 
