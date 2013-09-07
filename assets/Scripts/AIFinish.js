@@ -10,7 +10,7 @@ function OnTriggerExit (myTrigger : Collider) {
 		Debug.Log(count);
 	}
 	
-	if(count >= 4 && !pgtFinsh.gameFinished){
+	if(count == 1 && !pgtFinsh.gameFinished){
 		pgtFinsh.wins++;
 		count = 0;
 	}

@@ -34,23 +34,23 @@ function Update () {
 		switch(carNum){
 			case 0:
 				MoveCamTransform(GameObject.Find("Pgt").transform);
-				camera.cullingMask = -16729857;
+				camera.cullingMask = -50284289;
 			break;
 			case 1:
 				MoveCamTransform(GameObject.Find("Charger").transform);
-				camera.cullingMask = -16720641;
+				camera.cullingMask = -50275073;
 			break;
 			case 2:
 				MoveCamTransform(GameObject.Find("Colt").transform);
-				camera.cullingMask = -16720641;
+				camera.cullingMask = -50275073;
 			break;
 			case 3:
 				MoveCamTransform(GameObject.Find("Nitrous").transform);
-				camera.cullingMask = -16720641;
+				camera.cullingMask = -50275073;
 			break;
 			case 4:
 				MoveCamTransform(GameObject.Find("Lambo").transform);
-				camera.cullingMask = -16722689;
+				camera.cullingMask = -50277121;
 			break;
 		}
 		

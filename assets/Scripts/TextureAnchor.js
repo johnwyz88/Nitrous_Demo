@@ -53,6 +53,9 @@ function Start () {
 	} else if(guiTexture.texture.name == "question-mark"){
 		guiTexture.pixelInset.x = Screen.width - guiTexture.pixelInset.width - xOffSet;
 		guiTexture.pixelInset.y = Screen.height - guiTexture.pixelInset.height - yOffSet;
+	} else if(guiTexture.texture.name == "replay"){
+		guiTexture.pixelInset.x = Screen.width - guiTexture.pixelInset.width - xOffSet;
+		guiTexture.pixelInset.y = yOffSet;
 	} 
 }
 

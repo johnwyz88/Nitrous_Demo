@@ -26,17 +26,17 @@ function Update () {
 	if(startCount){
 		countDown -= Time.deltaTime;	
 		if(countDown <= 350 && countDown > 250){
-			camera.cullingMask = -16674049;
+			camera.cullingMask = -50228481;
 		} else if(countDown <= 250 && countDown > 150){
-			camera.cullingMask = -16608513;
+			camera.cullingMask = -50162945;
 		} else if(countDown <= 150 && countDown > 50){
-			camera.cullingMask = -16477441;
+			camera.cullingMask = -50031873;
 		} else if(countDown <= 50 && countDown > 0){
-			camera.cullingMask = -16215297;
+			camera.cullingMask = -49769729;
 			pgtAdminControl.FindAvatar0();
 			pgt.rigidbody.constraints.value__ = 0;
 		} else {
-			camera.cullingMask = -16739585;
+			camera.cullingMask = -50294017;
 			startCount = false;
 			countDown = 350;
 			charger.GetComponent(iMove).enabled = true;

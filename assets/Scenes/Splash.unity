@@ -5192,6 +5192,7 @@ Transform:
   - {fileID: 1640454477}
   - {fileID: 712712433}
   - {fileID: 556682735}
+  - {fileID: 1700185077}
   - {fileID: 1556814581}
   - {fileID: 1510570499}
   m_Father: {fileID: 0}
@@ -18561,7 +18562,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4278227199
+    m_Bits: 4244683007
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -19191,6 +19192,8 @@ MonoBehaviour:
   count: 0
   finishLineOneWay: {fileID: 1925707317}
   pgtAdminControl: {fileID: 785715257}
+  replay: {fileID: 1700185078}
+  touchPosition: {x: 0, y: 0}
 --- !u!114 &440070473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28642,7 +28645,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4278244095
+    m_Bits: 4244673279
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -37586,12 +37589,12 @@ GUITexture:
   m_GameObject: {fileID: 1196402157}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 8a48ca02d1295ed48afe6411b4e1c1f8, type: 3}
-  m_Color: {r: .625529051, g: .636355519, b: .805970132, a: .501960814}
+  m_Color: {r: .432835817, g: .39407441, b: .39407441, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 120
+    width: 150
     height: 240
   m_LeftBorder: 0
   m_RightBorder: 0
@@ -43626,7 +43629,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4278235391
+    m_Bits: 4244680959
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -47444,12 +47447,12 @@ GUITexture:
   m_GameObject: {fileID: 1556814579}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 01833774fda09ee4ebdf2bddeceee6ae, type: 3}
-  m_Color: {r: .828358173, g: .624359488, b: .731351852, a: .501960814}
+  m_Color: {r: .431372553, g: .392156869, b: .392156869, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 120
+    width: 150
     height: 240
   m_LeftBorder: 0
   m_RightBorder: 0
@@ -53802,6 +53805,67 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2003158864}
+--- !u!1 &1700185076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1700185077}
+  - 131: {fileID: 1700185078}
+  - 114: {fileID: 1700185079}
+  m_Layer: 25
+  m_Name: Replay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1700185077
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700185076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 35714796}
+--- !u!131 &1700185078
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700185076}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 1d4f4e888dc19494ab42358f827803f7, type: 3}
+  m_Color: {r: .0641568303, g: .955223858, b: .132700503, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 128
+    height: 128
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!114 &1700185079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700185076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3b3c44a93c41498fb7c1be369e0d9, type: 3}
+  m_Name: 
+  yOffSet: 0
+  xOffSet: 0
+  xPercent: 0
+  yPercent: 0
 --- !u!1 &1700799380
 GameObject:
   m_ObjectHideFlags: 0
