@@ -58,7 +58,7 @@ function Update () {
 			touchPosition = Input.GetTouch(0).position;
 			TouchEventHandler(touchPosition.x, touchPosition.y);
 		}
-		else if(Application.platform == RuntimePlatform.WindowsEditor && Input.GetMouseButtonDown(0)){
+		else if((Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsWebPlayer) && Input.GetMouseButtonDown(0)){
 			touchPosition = Input.mousePosition;
 			TouchEventHandler(touchPosition.x, touchPosition.y);
 		}		

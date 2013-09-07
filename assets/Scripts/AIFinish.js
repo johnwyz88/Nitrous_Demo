@@ -12,7 +12,6 @@ function OnTriggerExit (myTrigger : Collider) {
 	
 	if(count == 1 && !pgtFinsh.gameFinished){
 		pgtFinsh.wins++;
-		count = 0;
 	}
 }
 
