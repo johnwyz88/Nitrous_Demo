@@ -55,7 +55,12 @@ function Update () {
 				lambo.GetComponent(iMove).speed = Random.Range(40,50);
 			} while (lambo.GetComponent(iMove).speed == nitrous.GetComponent(iMove).speed);
 		
-			InGame = true;
+			InGame = true;	
+			
+			charger.GetComponent(AudioSource).enabled = true;
+			colt.GetComponent(AudioSource).enabled = true;
+			lambo.GetComponent(AudioSource).enabled = true;
+			nitrous.GetComponent(AudioSource).enabled = true;
 		}
 	}	
 	
