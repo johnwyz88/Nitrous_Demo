@@ -11,7 +11,7 @@ function OnGUI () {
 	}
 	style.fontSize = 80;
 	style.normal.textColor = Color.cyan;
-	GUI.Label(Rect(430, 30, 1000, 100),"Waterlooers I",style);
+	GUI.Label(Rect(430, 30, 1000, 100),"Nitrous Demo",style);
 	style.fontSize = 40;
 	GUI.Label(Rect(360, 150, 1000, 100),"presented by Forgottenland Studio",style);
 	style.normal.textColor = Color.yellow;
@@ -24,6 +24,6 @@ function OnGUI () {
 	GUI.Label(Rect(220, 460, 1000, 100),"Start practice map with a screen touch",style);
 	if(Input.touches.Length > 0){
 		GUI.Label(Rect(400, 540, 1000, 100),"Loading practice map...",style);
-		Application.LoadLevel("level2Final");
+		Application.LoadLevel(1);
 	}
 }
