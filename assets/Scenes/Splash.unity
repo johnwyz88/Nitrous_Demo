@@ -976,7 +976,7 @@ GameObject:
   - 4: {fileID: 122}
   - 182: {fileID: 295}
   m_Layer: 0
-  m_Name: WindZone
+  m_Name: '[FreeLancer #001024]WindZone'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4805,7 +4805,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 22600139}
   m_Layer: 0
-  m_Name: Peak
+  m_Name: '[John]Peak'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5164,7 +5164,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 35714796}
   m_Layer: 0
-  m_Name: Textures
+  m_Name: '[John]Textures'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5777,32 +5777,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 341100131}
   m_GameObject: {fileID: 50731743}
   m_Mesh: {fileID: 4300004, guid: 287c6977d10512846974465cab1eacc8, type: 3}
---- !u!1 &53154383
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 53154384}
-  m_Layer: 0
-  m_Name: Data
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &53154384
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 53154383}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 759.173279, y: 58.4939041, z: 574.417114}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &53771560
 GameObject:
   m_ObjectHideFlags: 0
@@ -17246,7 +17220,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 324181022}
   m_Layer: 0
-  m_Name: FinishLine
+  m_Name: '[John]FinishLine'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18511,7 +18485,7 @@ GameObject:
   - 81: {fileID: 393157844}
   - 114: {fileID: 393157850}
   m_Layer: 0
-  m_Name: SelectCamera
+  m_Name: '[John]SelectCamera'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22684,7 +22658,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 513200065}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: '[John]Terrain'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26140,7 +26114,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 695469710}
   m_Layer: 0
-  m_Name: Lightbridge
+  m_Name: '[FreeLancer #001024]Lightbridge'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26442,7 +26416,7 @@ GameObject:
   - 4: {fileID: 713848285}
   - 114: {fileID: 713848286}
   m_Layer: 0
-  m_Name: Waypoint Manager
+  m_Name: '[John]Waypoint Manager'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27018,7 +26992,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 750900649}
   m_Layer: 0
-  m_Name: SceneView
+  m_Name: '[FreeLancer #001024]SceneView'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27668,7 +27642,7 @@ GameObject:
   - 4: {fileID: 785715255}
   - 114: {fileID: 785715257}
   m_Layer: 0
-  m_Name: PgtAdminControl
+  m_Name: '[John]PgtAdminControl'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28616,7 +28590,7 @@ GameObject:
   - 114: {fileID: 849414424}
   - 114: {fileID: 849414425}
   m_Layer: 0
-  m_Name: GameCamera
+  m_Name: '[John]GameCamera'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31741,7 +31715,7 @@ GameObject:
   - 33: {fileID: 950081094}
   - 23: {fileID: 950081093}
   m_Layer: 0
-  m_Name: Road
+  m_Name: '[FreeLancer #001024]Road'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31838,7 +31812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100050, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
       propertyPath: m_Name
-      value: Road_Assembly
+      value: '[FreeLancer #001024][John]Road_Assembly'
       objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -32695,6 +32669,34 @@ Prefab:
     - target: {fileID: 400060, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[John][Blender]Collision prefab'
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[FreeLancer #001024]Bridge'
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[FreeLancer #001024]Lightbridge'
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[FreeLancer #001024]LightBridge_WireLights'
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[FreeLancer #001024]Road'
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[Prefab]Road Signs'
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
+      propertyPath: m_Name
+      value: '[[FreeLancer #001024]Road_Fence_Guard'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 224056c0a45ee2f47b9db48e8ddb5578, type: 2}
@@ -37553,7 +37555,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1191218788}
   m_Layer: 0
-  m_Name: Road_Assembly
+  m_Name: '[FreeLancer #001024][John]Road_Assembly'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37586,7 +37588,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1192355275}
   m_Layer: 0
-  m_Name: Road_Coll
+  m_Name: '[John][Blender]Collision prefab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37760,7 +37762,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1198644018}
   m_Layer: 0
-  m_Name: Cars
+  m_Name: '[Assets store]Cars'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42510,7 +42512,7 @@ GameObject:
   - 23: {fileID: 1316310810}
   - 111: {fileID: 1316310809}
   m_Layer: 0
-  m_Name: Road Signs
+  m_Name: '[Prefab]Road Signs'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43651,7 +43653,7 @@ GameObject:
   - 82: {fileID: 1392973382}
   - 114: {fileID: 1392973383}
   m_Layer: 0
-  m_Name: FirstCamera
+  m_Name: '[John]FirstCamera'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46805,7 +46807,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1520272809}
   m_Layer: 0
-  m_Name: Road_Fence_Guard
+  m_Name: '[[FreeLancer #001024]Road_Fence_Guard'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60087,7 +60089,7 @@ GameObject:
   - 33: {fileID: 1971250580}
   - 23: {fileID: 1971250579}
   m_Layer: 0
-  m_Name: LightBridge_WireLights
+  m_Name: '[FreeLancer #001024]LightBridge_WireLights'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63476,7 +63478,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2086347731}
   m_Layer: 0
-  m_Name: Bridge
+  m_Name: '[FreeLancer #001024]Bridge'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
