@@ -94,7 +94,7 @@ function Start() {
      //reverse = false;
 //    networkGroup = 0;
 	
-	enginePower = 60;
+	enginePower = 40;
     maxSteer = 12;
     power = 0;
     brake = 0;

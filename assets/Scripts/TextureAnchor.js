@@ -3,7 +3,7 @@ var yOffSet : int;
 var xOffSet : int;
 var xPercent : float;
 var yPercent : float;
-function Start () {
+function Update () {
 	yOffSet = 10;
 	xOffSet = 10;
 	xPercent = 0.5;
@@ -57,8 +57,4 @@ function Start () {
 		guiTexture.pixelInset.x = Screen.width - guiTexture.pixelInset.width - xOffSet;
 		guiTexture.pixelInset.y = yOffSet;
 	} 
-}
-
-function Update () {
-
 }
