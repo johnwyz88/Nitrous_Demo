@@ -1,6 +1,7 @@
 Library/
 Temp/
 Bin/
+NitrousDemoWeb_Sep_10_2013/
 *.unityproj
 *.pidb
 *.csproj
