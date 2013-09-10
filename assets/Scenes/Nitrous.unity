@@ -5181,6 +5181,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children:
   - {fileID: 1306013732}
+  - {fileID: 250731017}
   - {fileID: 1683728597}
   - {fileID: 1196402159}
   - {fileID: 531555166}
@@ -15733,6 +15734,52 @@ Transform:
   m_LocalScale: {x: .200000003, y: .800000012, z: .800000012}
   m_Children: []
   m_Father: {fileID: 807367930}
+--- !u!1 &250731016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 250731017}
+  - 131: {fileID: 250731018}
+  m_Layer: 26
+  m_Name: Instruction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &250731017
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250731016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 35714796}
+--- !u!131 &250731018
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250731016}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 0610dbb705c07884da9318766b6f674f, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 376.5
+    height: 530.5
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &252032628
 GameObject:
   m_ObjectHideFlags: 0
@@ -19580,7 +19627,7 @@ AudioSource:
   m_GameObject: {fileID: 440070468}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: fa40969e4fdc3e644a8718a052deb0d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 030c59e7595ef1444b7d70a34bea2d45, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .159999996
   m_Pitch: 1

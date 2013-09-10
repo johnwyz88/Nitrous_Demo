@@ -1,0 +1,17 @@
+NOTE:
+1. Nitrous Demo is proudly presented to you by 
+ForgottenLand Studio
+2. We are a group of Computer and Electrical 
+Engineering students from the University of 
+Waterloo
+3. For the last five months, we spent our 
+free time in developing Nitrous and we are 
+hoping to deliver the multiplayer version of 
+the game in 2014
+4. Credits to Unity Engine and Unity 
+Technologies Studio for their free assets
+5. Credits to Unity Studio members:
+Founder: John Yuzhi Wang
+Team lead: Luck Archbell
+6. If you have any questions, please contact 
+Mr. John Yuzhi Wang via email: johnwyz88@gmail.com
