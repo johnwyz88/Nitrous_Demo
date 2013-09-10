@@ -5188,7 +5188,6 @@ Transform:
   - {fileID: 977839433}
   - {fileID: 1901195816}
   - {fileID: 1349041228}
-  - {fileID: 1609660788}
   - {fileID: 1786037422}
   - {fileID: 1640454477}
   - {fileID: 712712433}
@@ -15743,6 +15742,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 250731017}
   - 131: {fileID: 250731018}
+  - 114: {fileID: 250731019}
   m_Layer: 26
   m_Name: Instruction
   m_TagString: Untagged
@@ -15768,18 +15768,32 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 250731016}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 0610dbb705c07884da9318766b6f674f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8abb94a2b70e877429c5c59b895b9009, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 376.5
-    height: 530.5
+    width: 316
+    height: 446
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &250731019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250731016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3b3c44a93c41498fb7c1be369e0d9, type: 3}
+  m_Name: 
+  yOffSet: 0
+  xOffSet: 0
+  xPercent: 0
+  yPercent: 0
 --- !u!1 &252032628
 GameObject:
   m_ObjectHideFlags: 0
@@ -18917,7 +18931,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4244683007
+    m_Bits: 4160786687
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -18951,6 +18965,8 @@ MonoBehaviour:
   rightChevron: {fileID: 1556814580}
   select: {fileID: 1510570498}
   gameCamTexture: {fileID: 849414425}
+  questionMark: {fileID: 556682736}
+  instructionShowing: 0
 --- !u!1 &400317681
 GameObject:
   m_ObjectHideFlags: 0
@@ -23997,7 +24013,7 @@ GameObject:
   - 4: {fileID: 556682735}
   - 131: {fileID: 556682736}
   - 114: {fileID: 556682737}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: QuestionMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29122,7 +29138,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4244673279
+    m_Bits: 4160787199
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -29190,6 +29206,10 @@ MonoBehaviour:
   pgtAdminControl: {fileID: 785715257}
   startCount: 0
   pgtFinish: {fileID: 440070472}
+  questionMarkDisplay: 0
+  questionMark: {fileID: 556682736}
+  instructionShowing: 0
+  touchPosition: {x: 0, y: 0}
 --- !u!1 &850173105
 GameObject:
   m_ObjectHideFlags: 0
@@ -33712,14 +33732,14 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977839432}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 8172384fa5663d84cac5e0b1175248a6, type: 3}
+  m_Texture: {fileID: 2800000, guid: bcfa225e7c6c1fe4a85ea8f2db3d40d8, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 230
-    height: 230
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -43393,14 +43413,14 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1349041227}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: bc7b2b43be6c8b54686c86df67087ca4, type: 3}
+  m_Texture: {fileID: 2800000, guid: dae348368f141ef478ff50728ea74e71, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 230
-    height: 230
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -44190,7 +44210,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4244680959
+    m_Bits: 4177572095
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -44239,6 +44259,8 @@ MonoBehaviour:
   touchPosition: {x: 0, y: 0}
   select: {fileID: 1510570498}
   switched: 0
+  questionMark: {fileID: 556682736}
+  instructionShowing: 0
 --- !u!1 &1394478166
 GameObject:
   m_ObjectHideFlags: 0
@@ -49183,67 +49205,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2003158864}
---- !u!1 &1609660787
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1609660788}
-  - 131: {fileID: 1609660789}
-  - 114: {fileID: 1609660790}
-  m_Layer: 23
-  m_Name: MedalBackImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1609660788
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1609660787}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 0, y: 0, z: 1}
-  m_Children: []
-  m_Father: {fileID: 35714796}
---- !u!131 &1609660789
-GUITexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1609660787}
-  m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 5a2725a0fb95efd489f1dcaa2fda5fda, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
-  m_PixelInset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 512
-    height: 512
-  m_LeftBorder: 0
-  m_RightBorder: 0
-  m_TopBorder: 0
-  m_BottomBorder: 0
---- !u!114 &1609660790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1609660787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1d3b3c44a93c41498fb7c1be369e0d9, type: 3}
-  m_Name: 
-  yOffSet: 0
-  xOffSet: 0
-  xPercent: 0
-  yPercent: 0
 --- !u!1 &1610862096
 GameObject:
   m_ObjectHideFlags: 0
@@ -57658,14 +57619,14 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1901195815}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: c911db4a299a4be49b858115900c9634, type: 3}
+  m_Texture: {fileID: 2800000, guid: d8353f3090b1c914988b2e2a17011f3c, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 230
-    height: 230
+    width: 512
+    height: 512
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0

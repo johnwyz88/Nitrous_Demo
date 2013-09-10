@@ -233,15 +233,15 @@ function Update()
 					    	
 			countDown -= Time.deltaTime;
 			if(countDown <= 350 && countDown > 250){
-				gameCam.cullingMask = -50228481;
+				gameCam.cullingMask = -134114561;
 			} else if(countDown <= 250 && countDown > 150){
-				gameCam.cullingMask = -50162945;
+				gameCam.cullingMask = -134049025;
 			} else if(countDown <= 150 && countDown > 50){
-				gameCam.cullingMask = -50031873;
+				gameCam.cullingMask = -133917953;
 			} else if(countDown <= 50 && countDown > 0){
-				gameCam.cullingMask = -49769729;			
+				gameCam.cullingMask = -133655809;			
 			} else {
-				gameCam.cullingMask = -50294017;
+				gameCam.cullingMask = -117402881;
 				driveEnabled = true;
 				Player.rigidbody.freezeRotation = false;
 			}

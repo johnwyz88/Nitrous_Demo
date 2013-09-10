@@ -26,6 +26,9 @@ function Update () {
 	} else if(guiTexture.texture.name == "comingSoon"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "instruction"){
+		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
 	} else if(guiTexture.texture.name == "go"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
@@ -38,16 +41,13 @@ function Update () {
 	} else if(guiTexture.texture.name == "num1"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
-	} else if(guiTexture.texture.name == "medal1"){
+	} else if(guiTexture.texture.name == "medal1C"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
-		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent * 1.55;
-	} else if(guiTexture.texture.name == "medal2"){
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "medal2C"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
-		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent * 1.55;
-	} else if(guiTexture.texture.name == "medal3"){
-		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
-		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent * 1.55;
-	} else if(guiTexture.texture.name == "medal"){
+		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
+	} else if(guiTexture.texture.name == "medal3C"){
 		guiTexture.pixelInset.x = (Screen.width - guiTexture.pixelInset.width) * xPercent;
 		guiTexture.pixelInset.y = (Screen.height - guiTexture.pixelInset.height) * yPercent;
 	} else if(guiTexture.texture.name == "question-mark"){

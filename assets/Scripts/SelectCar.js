@@ -7,24 +7,24 @@ var leftChevron : GUITexture;
 var rightChevron : GUITexture;
 var select : GUITexture;
 var gameCamTexture : GameCamTexture;
+var questionMark : GUITexture;
+var instructionShowing : boolean;
 
 function Start () {
 	carNum = 0;
 	selected = false;
 	camIsMoved = false;
+	instructionShowing = false;
 }
 
 function Update () {
 	if(camera.enabled){
 		//Input processing
 		if(Input.GetKeyDown("a")){
-			Debug.Log("a is down");
 			MoveCam("left");
 		}else if(Input.GetKeyDown("d")){
-			Debug.Log("d is down");
 			MoveCam("right");
 		}else if (Input.GetKeyDown("space")){
-			Debug.Log("space is down");
 			selected = true;
 		}
 		
@@ -34,23 +34,23 @@ function Update () {
 		switch(carNum){
 			case 0:
 				MoveCamTransform(GameObject.Find("Pgt").transform);
-				camera.cullingMask = -50284289;
+				camera.cullingMask = -134170369;
 			break;
 			case 1:
 				MoveCamTransform(GameObject.Find("Charger").transform);
-				camera.cullingMask = -50275073;
+				camera.cullingMask = -134161153;
 			break;
 			case 2:
 				MoveCamTransform(GameObject.Find("Colt").transform);
-				camera.cullingMask = -50275073;
+				camera.cullingMask = -134161153;
 			break;
 			case 3:
 				MoveCamTransform(GameObject.Find("Nitrous").transform);
-				camera.cullingMask = -50275073;
+				camera.cullingMask = -134161153;
 			break;
 			case 4:
 				MoveCamTransform(GameObject.Find("Lambo").transform);
-				camera.cullingMask = -50277121;
+				camera.cullingMask = -134163201;
 			break;
 		}
 		
@@ -114,7 +114,6 @@ function MoveCam(dir : String){
 		//if it can, move one
 		carNum -= 1;
 		camIsMoved = false;
-		Debug.Log("Move left");
 	}
 
 	//Check if cam can move right by one
@@ -122,7 +121,6 @@ function MoveCam(dir : String){
 	//if it can, move one
 		carNum += 1;
 		camIsMoved = false;
-		Debug.Log("Move right");
 	}
 		
 }
