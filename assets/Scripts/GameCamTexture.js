@@ -18,6 +18,10 @@ var questionMarkDisplay : boolean;
 var questionMark : GUITexture;
 var instructionShowing : boolean;
 var touchPosition : Vector2;
+var currentTime : float;
+var previousTime : float;
+var timeDiff : float;
+
 
 function Start () {
 	startCount = false;
@@ -25,13 +29,20 @@ function Start () {
 	InGame = false;
 	questionMarkDisplay = false;
 	instructionShowing = false;
+	currentTime = Time.time;
+    previousTime = 0;
+    timeDiff = 0;
 }
 
 function Update () {
 //	Debug.Log(camera.cullingMask.ToString());
 
 	if(startCount){
-		countDown -= Time.deltaTime;	
+		currentTime = Time.time;
+		timeDiff = currentTime - previousTime;
+		timeDiff *= 100;
+		countDown = 350 - timeDiff;	
+		Debug.Log(timeDiff);
 		if(countDown <= 350 && countDown > 250){
 			camera.cullingMask = -134114561;
 		} else if(countDown <= 250 && countDown > 150){
@@ -46,6 +57,9 @@ function Update () {
 			camera.cullingMask = -117402881;
 			startCount = false;
 			countDown = 350;
+			currentTime = Time.time;
+		    previousTime = 0;
+		    timeDiff = 0;
 			charger.GetComponent(iMove).enabled = true;
 			colt.GetComponent(iMove).enabled = true;
 			nitrous.GetComponent(iMove).enabled = true;
@@ -118,4 +132,5 @@ function StartGame(){
 	selectCamera.enabled = false;
 	camera.enabled = true;
 	startCount = true;
+	previousTime = Time.time;
 }

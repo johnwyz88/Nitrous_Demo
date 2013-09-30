@@ -19486,7 +19486,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1535854671}
   m_GameObject: {fileID: 440070468}
   serializedVersion: 2
-  m_Mass: 5500
+  m_Mass: 850000
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -28283,6 +28283,11 @@ MonoBehaviour:
   colt: {fileID: 390265683}
   pgtFinish: {fileID: 440070472}
   gameCam: {fileID: 849414419}
+  currentTime: 0
+  previousTime: 0
+  timeDiff: 0
+  updateInterval: .5
+  frameOffSet: 100
 --- !u!1 &787746969
 GameObject:
   m_ObjectHideFlags: 0
@@ -29210,6 +29215,9 @@ MonoBehaviour:
   questionMark: {fileID: 556682736}
   instructionShowing: 0
   touchPosition: {x: 0, y: 0}
+  currentTime: 0
+  previousTime: 0
+  timeDiff: 0
 --- !u!1 &850173105
 GameObject:
   m_ObjectHideFlags: 0
@@ -47505,7 +47513,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: c53c6aa6d3608ee479626d4fe1220ea8, type: 2}
       propertyPath: m_Mass
-      value: 5500
+      value: 850000
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: c53c6aa6d3608ee479626d4fe1220ea8, type: 2}
       propertyPath: GameCamObj

@@ -83,6 +83,18 @@ var colt : GameObject;
 var pgtFinish : PgtFinish;
 
 var gameCam : Camera;
+
+var currentTime : float;
+var previousTime : float;
+var timeDiff : float;
+
+var updateInterval = 0.5;
+ 
+private var accum = 0.0; // FPS accumulated over the interval
+private var frames = 0; // Frames drawn over the interval
+private var timeleft : float; // Left time for current interval
+
+var frameOffSet = 100;
 //-----------------------------
 
 
@@ -115,6 +127,9 @@ function Start() {
     minDriftSpeed = 130;
     driveEnabled = true;
     countDown = 350;
+    currentTime = Time.time;
+    previousTime = 0;
+    timeDiff = 0;
 //  Network.SetReceivingEnabled(networkGroup,true);
 //	Network.SetSendingEnabled(networkGroup,true);
 }
@@ -208,6 +223,21 @@ function FindAvatar0(){
 
 function Update()
 {
+	timeleft -= Time.deltaTime;
+    accum += Time.timeScale/Time.deltaTime;
+    ++frames;
+ 
+    // Interval ended - update GUI text and start new interval
+    if( timeleft <= 0.0 )
+    {
+        // display two fractional digits (f2 format)
+        Debug.Log((accum/frames).ToString("f2"));
+        frameOffSet = accum/frames;
+        timeleft = updateInterval;
+        accum = 0.0;
+        frames = 0;
+    }
+
 	try{
 //		style.fontStyle = FontStyle.Italic;
 //	    style.normal.textColor = Color.white;
@@ -225,13 +255,17 @@ function Update()
 			Player.transform.rotation.z = colt.transform.rotation.z;	
 			Player.rigidbody.freezeRotation = true;
 		    driveEnabled = false;
-		    countDown = 350;			
+		    countDown = 350;
+		    previousTime = Time.time;		
 	    }		
 	
 		if(driveEnabled == false){			
 			Player.rigidbody.velocity = Vector3(0,0,0);			
 					    	
-			countDown -= Time.deltaTime;
+			currentTime = Time.time;
+			timeDiff = currentTime - previousTime;
+			timeDiff *= 100;
+			countDown = 350 - timeDiff;
 			if(countDown <= 350 && countDown > 250){
 				gameCam.cullingMask = -134114561;
 			} else if(countDown <= 250 && countDown > 150){
@@ -243,6 +277,9 @@ function Update()
 			} else {
 				gameCam.cullingMask = -117402881;
 				driveEnabled = true;
+				currentTime = Time.time;
+			    previousTime = 0;
+			    timeDiff = 0;
 				Player.rigidbody.freezeRotation = false;
 			}
 		}
@@ -251,7 +288,7 @@ function Update()
 			speed=Player.rigidbody.velocity.magnitude * 3.6;
 			
 			if(!pgtFinish.gameFinished){
-				power=Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 250.0;	
+				power=Input.GetAxis("Vertical") * enginePower * Time.deltaTime * frameOffSet * 1.3;	
 		    	steer=Input.GetAxis("Horizontal") * maxSteer * Mathf.Clamp(speedTurn/speed, 0, 1);
 			}
 		    
